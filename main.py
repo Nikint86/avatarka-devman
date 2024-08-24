@@ -1,7 +1,6 @@
 from PIL import Image
 monro = Image.open("monro.jpg")
 red, green, blue = monro.split()
-new_monro = Image.merge("RGB", (red, green, blue))
 coordinates = (50, 0, red.width, red.height)
 red_cut = red.crop(coordinates)
 red_cut2 = red.crop((25,0,671, red.height))
